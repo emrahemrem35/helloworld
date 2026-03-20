@@ -1,0 +1,7 @@
+py-clob-client
+openai
+anthropic
+requests
+python-dotenv
+schedule
+loguru

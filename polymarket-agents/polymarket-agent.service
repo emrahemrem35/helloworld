@@ -1,0 +1,13 @@
+[Unit]
+Description=Polymarket AI Agent
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/root/polymarket-agents
+ExecStart=/root/polymarket-agents/venv/bin/python main.py
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target
